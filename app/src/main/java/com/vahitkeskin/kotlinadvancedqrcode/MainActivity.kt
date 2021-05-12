@@ -26,6 +26,8 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        supportActionBar?.hide()
+
         binding.ibQrCodeOpen.setOnClickListener {
             val scanner = IntentIntegrator(this)
             scanner.setDesiredBarcodeFormats(IntentIntegrator.QR_CODE)
@@ -56,7 +58,7 @@ class MainActivity : AppCompatActivity() {
         val dialogCopy: Button = dialog.findViewById(R.id.dialogCopy)
         val dialogClose: Button = dialog.findViewById(R.id.dialogClose)
 
-        dialogTitle.text = "Result"
+        dialogTitle.text = "Scanner Result"
         dialogMessage.text = result
 
         if (result.contains("http") || result.contains(".com")) {

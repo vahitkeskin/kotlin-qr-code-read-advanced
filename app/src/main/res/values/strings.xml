@@ -1,4 +1,4 @@
 <resources>
     <string name="app_name">KotlinAdvancedQrCode</string>
-    <string name="result">Result:</string>
+    <string name="print_scanner">Scanner Result</string>
 </resources>

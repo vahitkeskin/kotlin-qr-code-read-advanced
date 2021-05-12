@@ -58,7 +58,7 @@ class MainActivity : AppCompatActivity() {
         val dialogCopy: Button = dialog.findViewById(R.id.dialogCopy)
         val dialogClose: Button = dialog.findViewById(R.id.dialogClose)
 
-        dialogTitle.text = "Scanner Result"
+        dialogTitle.text = resources.getString(R.string.print_scanner)
         dialogMessage.text = result
 
         if (result.contains("http") || result.contains(".com")) {
